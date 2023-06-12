@@ -1,0 +1,11 @@
+footer{
+    width: 100%;
+    background-color: black;
+}
+
+small{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Bebas";
+}

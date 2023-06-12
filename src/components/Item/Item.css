@@ -1,0 +1,25 @@
+.Producto
+    {
+        width: 250px;
+        height: 370px;
+        padding: 20px;
+        text-align: center;
+        font-family: "Bebas";
+    }
+
+
+.Producto__imagen {
+    width: 200px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.Producto__btn{
+    background: 0;
+    color: black;
+}
+
+.Producto__btn:hover{
+    border: 1px solid black;
+}
+

@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url(/public/font/BebasNeue-Regular.ttf);
+  }
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem;
+    border-bottom: 2px solid black;
+    font-family: "Bebas";
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+}
+
+.navItems{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav-logo{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,30 @@
+.contenedorDetail {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorDetail h2 {
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+
+.contenedorDetail p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contenedorDetail img {
+    
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+}
+
+
+.infoDetail{
+    padding-left: 10px;
+}

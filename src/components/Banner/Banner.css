@@ -1,0 +1,14 @@
+.portada{
+    height: 100vh;
+    background-image: url(/public/img/posibleportada2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    font-family: "Bebas";
+}

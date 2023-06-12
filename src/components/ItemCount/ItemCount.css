@@ -1,0 +1,17 @@
+.miBtn {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 24px;
+    margin: 0 10px;
+}
