@@ -6,6 +6,8 @@ import { DataProvider } from './context/CarritoContext';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <BrowserRouter>
         <DataProvider>
           <NavBar />
+          <ToastContainer/>
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />

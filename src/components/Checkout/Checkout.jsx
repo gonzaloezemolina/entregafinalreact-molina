@@ -4,6 +4,7 @@ import { db } from "../../services/config"
 import { collection, addDoc } from "firebase/firestore"
 import './Checkout.css';
 
+
 const Checkout = () => {
     const { carrito, vaciarCarrito } = useContext(DataContext);
     const [nombre, setNombre] = useState("");
@@ -14,6 +15,7 @@ const Checkout = () => {
     const [emailConfirmarcion, setEmailConfirmacion] = useState("");
     const [error, setError] = useState("");
     const [ordenId, setOrdenId] = useState("");
+
 
 
     const manejadorSubmit = (event) => {
@@ -58,17 +60,17 @@ const Checkout = () => {
     return (
         <div>
             <form onSubmit={manejadorSubmit} className="formulario">
-                <h2 style={{padding:"15px"}}>Tu compra</h2>
+                <h2 style={{ padding: "15px" }}>Tu compra</h2>
                 {carrito.map(producto => (
                     <div key={producto.item.id} className="productosCheckout">
                         <p> {producto.item.nombre} x {producto.cantidad} </p>
-                        <p>Precio: $ {producto.item.precio} </p>
+                        <p>Precio: $ {producto.item.precio * producto.cantidad} </p>
                         <hr />
                     </div>
                 ))}
 
                 <div className="form-group">
-                    <h2 style={{padding: "15px"}}>Formulario</h2>
+                    <h2 style={{ padding: "15px" }}>Formulario</h2>
                     <label htmlFor=""> Nombre </label>
                     <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
                 </div>
@@ -102,7 +104,7 @@ const Checkout = () => {
                     error && <p style={{ color: "red" }}> {error} </p>
                 }
 
-                <button className="miBtn" type="submit"> Finalizar Orden </button>
+                <button className="btn" type="submit"> Finalizar Orden </button>
 
                 {
                     ordenId && (

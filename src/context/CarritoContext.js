@@ -1,6 +1,8 @@
 import { useState, createContext } from "react";
 
 
+
+
 export const DataContext = createContext({ 
     carrito: [],
     total: 0,
@@ -24,7 +26,7 @@ export const DataProvider = ({ children }) => {
         const productoExistente = carrito.find(producto => producto.item.id === item.id);
 
         if (!productoExistente) {
-            setCarrito(prev => [...prev, { item, cantidad }]);
+            setCarrito(prev => [...prev, { item, cantidad,}]);
             setCantidadTotal( prev => prev + cantidad);
             setTotal(prev => prev + (item.precio * cantidad));
         } else {
@@ -40,6 +42,7 @@ export const DataProvider = ({ children }) => {
             setTotal(prev => prev + (item.precio * cantidad));
 
         }
+
     }
 
 

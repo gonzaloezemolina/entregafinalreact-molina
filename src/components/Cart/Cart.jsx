@@ -11,7 +11,7 @@ const Cart = () => {
         return (
             <>
                 <h2 className="carritoSin"> No hay productos en el carrito :(</h2>
-                <Link className="miBtn" to='/'> Volver a la tienda </Link>
+                <Link className="btn" to='/'> Volver a la tienda </Link>
             </>
         )
     }
@@ -21,8 +21,8 @@ const Cart = () => {
             <div className="carritoComprar">
             <p>Total: ${total} </p>
             <p>Cantidad total de productos: {cantidadTotal} </p>
-            <button className="miBtn" onClick={() => vaciarCarrito()}> Vaciar carrito </button>
-            <Link className="miBtn" to='/checkout'> Finalizar Compra </Link>
+            <button className="btn" onClick={() => vaciarCarrito()}> Vaciar carrito </button>
+            <Link className="btn" to='/checkout'> Finalizar Compra </Link>
             </div>
         </div>
     )
