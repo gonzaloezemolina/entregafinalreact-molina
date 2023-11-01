@@ -2,7 +2,6 @@ import { useState, createContext } from "react";
 
 
 
-
 export const DataContext = createContext({ 
     carrito: [],
     total: 0,

@@ -8,6 +8,7 @@ import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Custom from './components/Custom/Custom';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
             <Route path='/item/:idItem' element={<ItemDetailContainer />} />
             <Route path='/cart' element = { <Cart/> } />
+            <Route path='/custom' element = { <Custom/> } />
             <Route path='/checkout' element = { <Checkout/> } />
           </Routes>
         </DataProvider>

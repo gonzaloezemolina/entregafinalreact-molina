@@ -3,7 +3,7 @@ import './NavBar.css'
 import { NavLink, Link } from "react-router-dom"
 
 const NavBar = () => {
-    const logoNav = "../img/Dragon-head2.jpg"
+    const logoNav = "../img/logompods.jpg"
     return (
             <header>
                 <Link to={"/"}>
@@ -15,21 +15,30 @@ const NavBar = () => {
                     <ul className='navItems'>
                         <li>
                             <NavLink to={"/categoria/2"}>
-                            Accesorios
+                            On-Ears
                             </NavLink>
                         </li>
                         
+
                         <li>
                             <NavLink to={"/categoria/3"}>
-                            Suplementos
+                            In-Ears
                             </NavLink>
                         </li>
 
-                        
+                        <li>
+                            <NavLink to={"/custom"}>
+                                Personalizar
+                            </NavLink>
+                        </li>
 
+                     
+
+                        
                         <li>
                             Contacto
                         </li>
+                        
                     </ul>
                 </nav>
 

@@ -1,0 +1,51 @@
+.customOptions{
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.customizeSection{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.Colores{
+    padding-right: 30px;
+}
+
+
+.BotonColor1{
+    background: rgb(235, 18, 18);
+    border-radius: 20px;
+    border: 2px white solid;
+}
+
+.BotonColor2{
+    background: black;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+
+.BotonColor3{
+    background: blue;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+
+.BotonColor4{
+    background: pink;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+
+.BotonColor5{
+    background: green;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+
+.BotonColor6{
+    background: yellow;
+    border-radius: 20px;
+    border: 2px white solid;
+}

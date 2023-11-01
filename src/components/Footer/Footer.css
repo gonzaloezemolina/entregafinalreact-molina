@@ -1,11 +1,25 @@
 footer{
+    height: 100%;
     width: 100%;
+    color: white;
     background-color: black;
+    font-family: "Bebas";
 }
 
-small{
+
+.titulo-footer{
+    padding-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.redes__footer{
+    padding-top: 10px;
+    text-align: center;
+}
+.redes__iconos{
+    padding: 15px;
     display: flex;
     justify-content: center;
-    color: white;
-    font-family: "Bebas";
+    cursor: pointer;
 }
